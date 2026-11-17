@@ -11,9 +11,9 @@ export interface paths {
             path?: never;
             cookie?: never;
         };
-        get: operations["api_group_list"];
+        get: operations["group_list"];
         put?: never;
-        post: operations["api_group_create"];
+        post: operations["group_create"];
         delete?: never;
         options?: never;
         head?: never;
@@ -27,13 +27,13 @@ export interface paths {
             path?: never;
             cookie?: never;
         };
-        get: operations["api_group_retrieve"];
-        put: operations["api_group_update"];
+        get: operations["group_retrieve"];
+        put: operations["group_update"];
         post?: never;
-        delete: operations["api_group_destroy"];
+        delete: operations["group_destroy"];
         options?: never;
         head?: never;
-        patch: operations["api_group_partial_update"];
+        patch: operations["group_partial_update"];
         trace?: never;
     };
     "/api/permission/": {
@@ -43,9 +43,9 @@ export interface paths {
             path?: never;
             cookie?: never;
         };
-        get: operations["api_permission_list"];
+        get: operations["permission_list"];
         put?: never;
-        post: operations["api_permission_create"];
+        post: operations["permission_create"];
         delete?: never;
         options?: never;
         head?: never;
@@ -59,13 +59,13 @@ export interface paths {
             path?: never;
             cookie?: never;
         };
-        get: operations["api_permission_retrieve"];
-        put: operations["api_permission_update"];
+        get: operations["permission_retrieve"];
+        put: operations["permission_update"];
         post?: never;
-        delete: operations["api_permission_destroy"];
+        delete: operations["permission_destroy"];
         options?: never;
         head?: never;
-        patch: operations["api_permission_partial_update"];
+        patch: operations["permission_partial_update"];
         trace?: never;
     };
     "/api/profile/": {
@@ -75,9 +75,9 @@ export interface paths {
             path?: never;
             cookie?: never;
         };
-        get: operations["api_profile_list"];
+        get: operations["profile_list"];
         put?: never;
-        post: operations["api_profile_create"];
+        post: operations["profile_create"];
         delete?: never;
         options?: never;
         head?: never;
@@ -91,13 +91,13 @@ export interface paths {
             path?: never;
             cookie?: never;
         };
-        get: operations["api_profile_retrieve"];
-        put: operations["api_profile_update"];
+        get: operations["profile_retrieve"];
+        put: operations["profile_update"];
         post?: never;
-        delete: operations["api_profile_destroy"];
+        delete: operations["profile_destroy"];
         options?: never;
         head?: never;
-        patch: operations["api_profile_partial_update"];
+        patch: operations["profile_partial_update"];
         trace?: never;
     };
     "/api/regformfielddef/": {
@@ -107,9 +107,9 @@ export interface paths {
             path?: never;
             cookie?: never;
         };
-        get: operations["api_regformfielddef_list"];
+        get: operations["regformfielddef_list"];
         put?: never;
-        post: operations["api_regformfielddef_create"];
+        post: operations["regformfielddef_create"];
         delete?: never;
         options?: never;
         head?: never;
@@ -123,13 +123,13 @@ export interface paths {
             path?: never;
             cookie?: never;
         };
-        get: operations["api_regformfielddef_retrieve"];
-        put: operations["api_regformfielddef_update"];
+        get: operations["regformfielddef_retrieve"];
+        put: operations["regformfielddef_update"];
         post?: never;
-        delete: operations["api_regformfielddef_destroy"];
+        delete: operations["regformfielddef_destroy"];
         options?: never;
         head?: never;
-        patch: operations["api_regformfielddef_partial_update"];
+        patch: operations["regformfielddef_partial_update"];
         trace?: never;
     };
     "/api/registration/": {
@@ -139,9 +139,9 @@ export interface paths {
             path?: never;
             cookie?: never;
         };
-        get: operations["api_registration_list"];
+        get: operations["registration_list"];
         put?: never;
-        post: operations["api_registration_create"];
+        post: operations["registration_create"];
         delete?: never;
         options?: never;
         head?: never;
@@ -155,13 +155,13 @@ export interface paths {
             path?: never;
             cookie?: never;
         };
-        get: operations["api_registration_retrieve"];
-        put: operations["api_registration_update"];
+        get: operations["registration_retrieve"];
+        put: operations["registration_update"];
         post?: never;
-        delete: operations["api_registration_destroy"];
+        delete: operations["registration_destroy"];
         options?: never;
         head?: never;
-        patch: operations["api_registration_partial_update"];
+        patch: operations["registration_partial_update"];
         trace?: never;
     };
     "/api/registration/{id}/approve/": {
@@ -174,7 +174,7 @@ export interface paths {
         get?: never;
         put?: never;
         /** @description Approve a pending registration. Creates a User + Profile and marks Registration as approved. */
-        post: operations["api_registration_approve_create"];
+        post: operations["registration_approve_create"];
         delete?: never;
         options?: never;
         head?: never;
@@ -191,7 +191,7 @@ export interface paths {
         get?: never;
         put?: never;
         /** @description Reject a pending registration. Marks Registration as rejected, no User is created. */
-        post: operations["api_registration_reject_create"];
+        post: operations["registration_reject_create"];
         delete?: never;
         options?: never;
         head?: never;
@@ -211,7 +211,7 @@ export interface paths {
          *     - YAML: application/vnd.oai.openapi
          *     - JSON: application/vnd.oai.openapi+json
          */
-        get: operations["api_schema_retrieve"];
+        get: operations["schema_retrieve"];
         put?: never;
         post?: never;
         delete?: never;
@@ -233,7 +233,7 @@ export interface paths {
          * @description Takes a set of user credentials and returns an access and refresh JSON web
          *     token pair to prove the authentication of those credentials.
          */
-        post: operations["api_token_create"];
+        post: operations["token_create"];
         delete?: never;
         options?: never;
         head?: never;
@@ -253,7 +253,7 @@ export interface paths {
          * @description Takes a refresh type JSON web token and returns an access type JSON web
          *     token if the refresh token is valid.
          */
-        post: operations["api_token_refresh_create"];
+        post: operations["token_refresh_create"];
         delete?: never;
         options?: never;
         head?: never;
@@ -267,9 +267,9 @@ export interface paths {
             path?: never;
             cookie?: never;
         };
-        get: operations["api_users_list"];
+        get: operations["users_list"];
         put?: never;
-        post: operations["api_users_create"];
+        post: operations["users_create"];
         delete?: never;
         options?: never;
         head?: never;
@@ -283,13 +283,13 @@ export interface paths {
             path?: never;
             cookie?: never;
         };
-        get: operations["api_users_retrieve"];
-        put: operations["api_users_update"];
+        get: operations["users_retrieve"];
+        put: operations["users_update"];
         post?: never;
-        delete: operations["api_users_destroy"];
+        delete: operations["users_destroy"];
         options?: never;
         head?: never;
-        patch: operations["api_users_partial_update"];
+        patch: operations["users_partial_update"];
         trace?: never;
     };
 }
@@ -574,7 +574,7 @@ export interface components {
 }
 export type $defs = Record<string, never>;
 export interface operations {
-    api_group_list: {
+    group_list: {
         parameters: {
             query?: {
                 /** @description Which field to use when ordering the results. */
@@ -598,7 +598,7 @@ export interface operations {
             };
         };
     };
-    api_group_create: {
+    group_create: {
         parameters: {
             query?: never;
             header?: never;
@@ -623,7 +623,7 @@ export interface operations {
             };
         };
     };
-    api_group_retrieve: {
+    group_retrieve: {
         parameters: {
             query?: never;
             header?: never;
@@ -645,7 +645,7 @@ export interface operations {
             };
         };
     };
-    api_group_update: {
+    group_update: {
         parameters: {
             query?: never;
             header?: never;
@@ -673,7 +673,7 @@ export interface operations {
             };
         };
     };
-    api_group_destroy: {
+    group_destroy: {
         parameters: {
             query?: never;
             header?: never;
@@ -694,7 +694,7 @@ export interface operations {
             };
         };
     };
-    api_group_partial_update: {
+    group_partial_update: {
         parameters: {
             query?: never;
             header?: never;
@@ -722,7 +722,7 @@ export interface operations {
             };
         };
     };
-    api_permission_list: {
+    permission_list: {
         parameters: {
             query?: {
                 /** @description Which field to use when ordering the results. */
@@ -746,7 +746,7 @@ export interface operations {
             };
         };
     };
-    api_permission_create: {
+    permission_create: {
         parameters: {
             query?: never;
             header?: never;
@@ -771,7 +771,7 @@ export interface operations {
             };
         };
     };
-    api_permission_retrieve: {
+    permission_retrieve: {
         parameters: {
             query?: never;
             header?: never;
@@ -793,7 +793,7 @@ export interface operations {
             };
         };
     };
-    api_permission_update: {
+    permission_update: {
         parameters: {
             query?: never;
             header?: never;
@@ -821,7 +821,7 @@ export interface operations {
             };
         };
     };
-    api_permission_destroy: {
+    permission_destroy: {
         parameters: {
             query?: never;
             header?: never;
@@ -842,7 +842,7 @@ export interface operations {
             };
         };
     };
-    api_permission_partial_update: {
+    permission_partial_update: {
         parameters: {
             query?: never;
             header?: never;
@@ -870,7 +870,7 @@ export interface operations {
             };
         };
     };
-    api_profile_list: {
+    profile_list: {
         parameters: {
             query?: {
                 city?: string;
@@ -945,7 +945,7 @@ export interface operations {
             };
         };
     };
-    api_profile_create: {
+    profile_create: {
         parameters: {
             query?: never;
             header?: never;
@@ -970,7 +970,7 @@ export interface operations {
             };
         };
     };
-    api_profile_retrieve: {
+    profile_retrieve: {
         parameters: {
             query?: never;
             header?: never;
@@ -992,7 +992,7 @@ export interface operations {
             };
         };
     };
-    api_profile_update: {
+    profile_update: {
         parameters: {
             query?: never;
             header?: never;
@@ -1020,7 +1020,7 @@ export interface operations {
             };
         };
     };
-    api_profile_destroy: {
+    profile_destroy: {
         parameters: {
             query?: never;
             header?: never;
@@ -1041,7 +1041,7 @@ export interface operations {
             };
         };
     };
-    api_profile_partial_update: {
+    profile_partial_update: {
         parameters: {
             query?: never;
             header?: never;
@@ -1069,7 +1069,7 @@ export interface operations {
             };
         };
     };
-    api_regformfielddef_list: {
+    regformfielddef_list: {
         parameters: {
             query?: {
                 error_messages?: string;
@@ -1178,7 +1178,7 @@ export interface operations {
             };
         };
     };
-    api_regformfielddef_create: {
+    regformfielddef_create: {
         parameters: {
             query?: never;
             header?: never;
@@ -1203,7 +1203,7 @@ export interface operations {
             };
         };
     };
-    api_regformfielddef_retrieve: {
+    regformfielddef_retrieve: {
         parameters: {
             query?: never;
             header?: never;
@@ -1225,7 +1225,7 @@ export interface operations {
             };
         };
     };
-    api_regformfielddef_update: {
+    regformfielddef_update: {
         parameters: {
             query?: never;
             header?: never;
@@ -1253,7 +1253,7 @@ export interface operations {
             };
         };
     };
-    api_regformfielddef_destroy: {
+    regformfielddef_destroy: {
         parameters: {
             query?: never;
             header?: never;
@@ -1274,7 +1274,7 @@ export interface operations {
             };
         };
     };
-    api_regformfielddef_partial_update: {
+    regformfielddef_partial_update: {
         parameters: {
             query?: never;
             header?: never;
@@ -1302,7 +1302,7 @@ export interface operations {
             };
         };
     };
-    api_registration_list: {
+    registration_list: {
         parameters: {
             query?: {
                 city?: string;
@@ -1402,7 +1402,7 @@ export interface operations {
             };
         };
     };
-    api_registration_create: {
+    registration_create: {
         parameters: {
             query?: never;
             header?: never;
@@ -1427,7 +1427,7 @@ export interface operations {
             };
         };
     };
-    api_registration_retrieve: {
+    registration_retrieve: {
         parameters: {
             query?: never;
             header?: never;
@@ -1449,7 +1449,7 @@ export interface operations {
             };
         };
     };
-    api_registration_update: {
+    registration_update: {
         parameters: {
             query?: never;
             header?: never;
@@ -1477,7 +1477,7 @@ export interface operations {
             };
         };
     };
-    api_registration_destroy: {
+    registration_destroy: {
         parameters: {
             query?: never;
             header?: never;
@@ -1498,7 +1498,7 @@ export interface operations {
             };
         };
     };
-    api_registration_partial_update: {
+    registration_partial_update: {
         parameters: {
             query?: never;
             header?: never;
@@ -1526,7 +1526,7 @@ export interface operations {
             };
         };
     };
-    api_registration_approve_create: {
+    registration_approve_create: {
         parameters: {
             query?: never;
             header?: never;
@@ -1564,7 +1564,7 @@ export interface operations {
             };
         };
     };
-    api_registration_reject_create: {
+    registration_reject_create: {
         parameters: {
             query?: never;
             header?: never;
@@ -1600,11 +1600,11 @@ export interface operations {
             };
         };
     };
-    api_schema_retrieve: {
+    schema_retrieve: {
         parameters: {
             query?: {
                 format?: "json" | "yaml";
-                lang?: "af" | "ar" | "ar-dz" | "ast" | "az" | "be" | "bg" | "bn" | "br" | "bs" | "ca" | "ckb" | "cs" | "cy" | "da" | "de" | "dsb" | "el" | "en" | "en-au" | "en-gb" | "eo" | "es" | "es-ar" | "es-co" | "es-mx" | "es-ni" | "es-ve" | "et" | "eu" | "fa" | "fi" | "fr" | "fy" | "ga" | "gd" | "gl" | "he" | "hi" | "hr" | "hsb" | "hu" | "hy" | "ia" | "id" | "ig" | "io" | "is" | "it" | "ja" | "ka" | "kab" | "kk" | "km" | "kn" | "ko" | "ky" | "lb" | "lt" | "lv" | "mk" | "ml" | "mn" | "mr" | "ms" | "my" | "nb" | "ne" | "nl" | "nn" | "os" | "pa" | "pl" | "pt" | "pt-br" | "ro" | "ru" | "sk" | "sl" | "sq" | "sr" | "sr-latn" | "sv" | "sw" | "ta" | "te" | "tg" | "th" | "tk" | "tr" | "tt" | "udm" | "ug" | "uk" | "ur" | "uz" | "vi" | "zh-hans" | "zh-hant";
+                lang?: "af" | "ar" | "ar-dz" | "ast" | "az" | "be" | "bg" | "bn" | "br" | "bs" | "ca" | "ckb" | "cs" | "cy" | "da" | "de" | "dsb" | "el" | "en" | "en-au" | "en-gb" | "eo" | "es" | "es-ar" | "es-co" | "es-mx" | "es-ni" | "es-ve" | "et" | "eu" | "fa" | "fi" | "fr" | "fy" | "ga" | "gd" | "gl" | "he" | "hi" | "hr" | "hsb" | "ht" | "hu" | "hy" | "ia" | "id" | "ig" | "io" | "is" | "it" | "ja" | "ka" | "kab" | "kk" | "km" | "kn" | "ko" | "ky" | "lb" | "lt" | "lv" | "mk" | "ml" | "mn" | "mr" | "ms" | "my" | "nb" | "ne" | "nl" | "nn" | "os" | "pa" | "pl" | "pt" | "pt-br" | "ro" | "ru" | "sk" | "sl" | "sq" | "sr" | "sr-latn" | "sv" | "sw" | "ta" | "te" | "tg" | "th" | "tk" | "tr" | "tt" | "udm" | "ug" | "uk" | "ur" | "uz" | "vi" | "zh-hans" | "zh-hant";
             };
             header?: never;
             path?: never;
@@ -1633,7 +1633,7 @@ export interface operations {
             };
         };
     };
-    api_token_create: {
+    token_create: {
         parameters: {
             query?: never;
             header?: never;
@@ -1658,7 +1658,7 @@ export interface operations {
             };
         };
     };
-    api_token_refresh_create: {
+    token_refresh_create: {
         parameters: {
             query?: never;
             header?: never;
@@ -1683,7 +1683,7 @@ export interface operations {
             };
         };
     };
-    api_users_list: {
+    users_list: {
         parameters: {
             query?: {
                 date_joined?: string;
@@ -1749,7 +1749,7 @@ export interface operations {
             };
         };
     };
-    api_users_create: {
+    users_create: {
         parameters: {
             query?: never;
             header?: never;
@@ -1774,7 +1774,7 @@ export interface operations {
             };
         };
     };
-    api_users_retrieve: {
+    users_retrieve: {
         parameters: {
             query?: never;
             header?: never;
@@ -1796,7 +1796,7 @@ export interface operations {
             };
         };
     };
-    api_users_update: {
+    users_update: {
         parameters: {
             query?: never;
             header?: never;
@@ -1824,7 +1824,7 @@ export interface operations {
             };
         };
     };
-    api_users_destroy: {
+    users_destroy: {
         parameters: {
             query?: never;
             header?: never;
@@ -1845,7 +1845,7 @@ export interface operations {
             };
         };
     };
-    api_users_partial_update: {
+    users_partial_update: {
         parameters: {
             query?: never;
             header?: never;
