@@ -80,8 +80,7 @@ frontend/                     Next.js-Anwendung
     lib/generated/            generierte Typen (types.ts) und Hooks (api.ts)
     ui/                       Bausteine: Navigation, Eingabefelder
     ux/                       Formularlogik: Schritte, Hooks, Validierung
-mediafiles/                   hochgeladene Dateien aus der Entwicklung
-nextjs-dashboard/             offizielles Next.js-Lern-Tutorial, nicht Teil der Anwendung
+mediafiles/                   hochgeladene Dateien zur Laufzeit (nicht im Repository)
 ```
 
 ## Lokal starten
