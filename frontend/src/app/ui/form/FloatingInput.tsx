@@ -45,7 +45,7 @@ function FloatingInput<T extends FieldValues>(
         {...register(name)}
         onChange={handleChange}
         placeholder=" "
-        className={`peer  bg-gray-200 block w-full  px-3 pt-7 pb-2 text-sm placeholder-transparent  rounded rounded-xl
+        className={`peer  bg-gray-200 block w-full  px-3 pt-7 pb-2 text-sm placeholder-transparent  rounded-xl
           ${error ? "border-red-500 focus:ring-red-500 focus:border-red-500" : "border-gray-300 focus:ring-blue-500 focus:border-blue-500"}
         `}
         {...props}
