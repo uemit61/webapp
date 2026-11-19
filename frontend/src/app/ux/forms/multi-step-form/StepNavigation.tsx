@@ -9,19 +9,19 @@ type Props = {
 
 export default function StepNavigation({ onBack, onNext, isFirst, isLast }: Props) {
   return (
-    <div className="flex justify-between mt-6">
+    <div className="text-white flex justify-between mt-6">
       {!isFirst && (
-        <button type="button" onClick={onBack} className="px-4 py-2 bg-blue-500 rounded">
+        <button type="button" onClick={onBack} className="px-4 py-2 bg-blue-700 rounded">
           Zurück
         </button>
       )}
       {!isLast && (
-        <button type="button" onClick={onNext} className="ml-auto px-4 py-2 text-white transition-all bg-blue-500 rounded">
+        <button type="button" onClick={onNext} className="ml-auto px-4 py-2  transition-all bg-blue-700 rounded">
           Weiter
         </button>
       )}
       {isLast && (
-        <button type="submit"  className="ml-auto px-4 py-2  text-white transition-all bg-green-500 rounded">
+        <button type="submit"  className="ml-auto px-4 py-2   transition-all bg-green-700 rounded">
           Absenden
         </button>
       )}
