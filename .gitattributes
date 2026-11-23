@@ -1,0 +1,4 @@
+# PDFs sind Binärdateien: Git soll beim Auschecken keine Zeilenenden umwandeln
+# (core.autocrlf) und keinen Text-Diff versuchen. Ohne diese Regel kann eine PDF
+# ohne Null-Bytes als Text gelten und durch LF -> CRLF beschädigt werden.
+*.pdf binary
